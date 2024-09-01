@@ -17,6 +17,8 @@ app.use('/', userRoutes)
 const SERVER_PORT = process.env.SERVER_PORT || 3000
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173'
 
+console.log(CLIENT_URL)
+
 const server = http.createServer(app)
 
 const io = new Server(server, {
